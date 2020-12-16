@@ -7,12 +7,12 @@ var _rollbarConfig = {
     client: {
 	    javascript: {
 	      source_map_enabled: true,
-	      code_version: "123456",
+	      code_version: "master",
 	      guess_uncaught_frames: true
 	    }
 	  },
 	  server: {
-	  	root: "file:///Users/ajtran/Development/examples/rollbarjs-source-map/"
+	  	root: ""
 	  }
   }
 };
