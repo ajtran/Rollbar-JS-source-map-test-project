@@ -17,7 +17,7 @@ function numero(num) {
   try {
       throw new Error("Something went wrong inside numero");
   } catch (e) {
-      Rollbar.error(e);
+      Bugsnag.notify(e);
   }
   return num;
 }
@@ -47,5 +47,5 @@ function myFunction() {
 try {
   throw new Error("something happened on load");
 } catch (e) {
-  Rollbar.error(e);
+  Bugsnag.notify(e);
 }
